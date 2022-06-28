@@ -1,0 +1,34 @@
+.icons-list {
+  @include flexCenter($type: flex, $main-axis: center, $cross-axis: center);
+
+  &__link {
+    display: block;
+
+    padding: 12px;
+
+    fill: $color-company;
+    background-color: $color-background-primery;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: $color-accent;
+    fill: $color-text-light;
+    outline: 0;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+
+    &__item:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

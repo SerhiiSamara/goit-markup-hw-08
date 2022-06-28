@@ -1,0 +1,27 @@
+.footer {
+  //   max-width: 1600px;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    text-align: center;
+  }
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $color-background-dark;
+
+  //   &__container {
+  //     display: flex;
+  //     align-items: center;
+  //   }
+
+  &__logo {
+    color: $color-text-light;
+  }
+}
+
+// .address__footer {
+//   margin-right: 70px;
+// }

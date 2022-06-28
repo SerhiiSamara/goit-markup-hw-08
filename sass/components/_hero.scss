@@ -1,0 +1,266 @@
+.hero {
+  position: relative;
+
+  //   padding-top: 200px;
+  //   padding-bottom: 200px;
+  //   max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $color-hero-bg;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/mobile-hero-bg.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/mobile-hero-bg@x2.jpg);
+    }
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $color-text-light;
+    @media screen and (max-width: 767px) {
+      max-width: 360px;
+
+      font-size: 26px;
+      line-height: 1.6;
+    }
+    // max-width: 696px;
+
+    // font-size: 44px;
+    // line-height: 1.4;
+  }
+}
+
+// .backdrop {
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+
+//   width: 100%;
+//   height: 100%;
+
+//   background: rgba(0, 0, 0, 0.2);
+//   transition: opacity 350ms linear, visibility 350ms linear;
+//   z-index: 10;
+// }
+
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+
+//   min-width: 528px;
+//   padding: 40px;
+
+//   transform: translate(-50%, -50%);
+//   background-color: $color-background-primery;
+
+//   .button-close {
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     height: 30px;
+//     width: 30px;
+//     margin-right: 8px;
+//     margin-top: 8px;
+
+//     border-radius: 50%;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     background-color: inherit;
+
+//     &:hover,
+//     &:focus {
+//       cursor: pointer;
+//       border: 1px solid;
+//       border-color: $color-accent;
+//       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+
+//     &:hover,
+//     &:focus &__img {
+//       fill: $color-accent;
+//     }
+//   }
+
+//   &__title {
+//     margin-top: 0;
+//     margin-bottom: 12px;
+
+//     color: $color-text-title;
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 1.1;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//   }
+// }
+
+// .form {
+//   &__field {
+//     display: flex;
+//     position: relative;
+//     flex-direction: column;
+
+//     margin-bottom: 10px;
+//   }
+
+//   &__icon {
+//     position: absolute;
+//     left: 12px;
+//     top: 28px;
+
+//     fill: $color-text-title;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   &__label {
+//     margin-bottom: 4px;
+
+//     font-size: 12px;
+//     line-height: 1.2;
+//     letter-spacing: 0.01em;
+//   }
+
+//   &__coment {
+//     padding: 12px 16px;
+//   }
+
+//   &__input {
+//     height: 40px;
+//     padding-left: 42px;
+
+//     color: $color-text-primary;
+//     font-size: 12px;
+
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   &__coment::placeholder {
+//     color: rgba(117, 117, 117, 0.5);
+//     font-size: 12px;
+//     line-height: 14px;
+//     letter-spacing: 0.01em;
+//   }
+
+//   &__coment {
+//     height: 120px;
+
+//     padding: 12px 16px;
+
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     resize: none;
+//   }
+
+//   &__input:checked,
+//   &__input:focus,
+//   &__input:hover {
+//     border-color: $color-accent;
+//     outline: 0;
+//   }
+
+//   &__field:checked,
+//   &__field:focus,
+//   &__field:hover .form__icon {
+//     fill: $color-accent;
+//   }
+
+//   &__button {
+//     display: block;
+
+//     margin-left: auto;
+//     margin-right: auto;
+
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   }
+// }
+
+// .checkbox {
+//   display: flex;
+//   align-items: center;
+
+//   margin-bottom: 30px;
+
+//   font-size: 14px;
+//   line-height: 1.7;
+//   letter-spacing: 0.03em;
+
+//   &__input {
+//     appearance: none;
+//     position: absolute;
+//   }
+
+//   &__border {
+//     display: flex;
+//     align-items: center;
+
+//     width: 16px;
+//     height: 15px;
+//     margin-right: 8px;
+
+//     border: 2px solid $color-text-title;
+//     border-radius: 2px;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   &__link {
+//     margin-left: 5px;
+
+//     color: $color-accent;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+//     text-decoration: none;
+//     text-decoration-line: underline;
+//   }
+
+//   &__link:hover,
+//   &__link:focus {
+//     text-decoration-line: none;
+//     outline: 0;
+//   }
+
+//   &__input:checked + &__border {
+//     background-color: $color-accent;
+//     border-color: $color-accent;
+//     background-size: contain;
+//     background-origin: border-box;
+//   }
+
+//   &__input:focus + &__border {
+//     border-color: $color-accent;
+//   }
+// }
