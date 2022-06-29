@@ -148,30 +148,28 @@ img {
   margin-left: auto;
   background-color: #c4c4c4;
   background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile-hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero-bg.jpg);
 }
 
-@media screen and (max-width: 767px) {
-  .hero {
-    max-width: 480px;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile-hero-bg.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero-bg.jpg);
-  }
-}
-
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile-hero-bg@x2.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero-bg@x2.jpg);
   }
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    max-width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    padding-top: 118px;
-    padding-bottom: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet-hero-bg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-hero-bg.jpg);
   }
@@ -253,12 +251,6 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #fff;
-}
-
-@media screen and (max-width: 479px) {
-  .modal {
-    max-width: 450px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -538,7 +530,16 @@ img {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .team__item {
+  padding-bottom: 24px;
   text-align: center;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -546,15 +547,22 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 1199px) {
-  .team__item {
-    padding-bottom: 24px;
+@media screen and (max-width: 767px) {
+  .team__item__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 90px) / 4);
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-right: 30px;
   }
 }
 
