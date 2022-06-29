@@ -79,14 +79,22 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
+  // width: 528px;
   padding: 40px;
 
   transform: translate(-50%, -50%);
   background-color: $color-background-primery;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 479px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 480px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 
   .button-close {
