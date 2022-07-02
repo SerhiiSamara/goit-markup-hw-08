@@ -5,16 +5,14 @@
   }
   &__list {
     display: flex;
+    gap: 30px;
   }
 
   &__item {
     position: relative;
 
     @include amountRow(calc((100% - 60px) / 3));
-  }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
     z-index: 0;
   }
 
