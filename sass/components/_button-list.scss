@@ -1,15 +1,22 @@
 .button-list {
   @include flexCenter($type: flex, $main-axis: center, $cross-axis: center);
-  @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-    justify-content: left;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 40px;
-    gap: 15px 8px;
+
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  gap: 15px 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+
+    justify-content: center;
   }
 
-  //   margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
   &__button {
     padding: 4px 20px;
@@ -27,10 +34,6 @@
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  // &__item:not(:last-child) {
-  //   margin-right: 8px;
-  // }
 
   &__button:hover,
   &__button:focus {

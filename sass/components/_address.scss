@@ -1,14 +1,20 @@
 .address {
   &__contain {
-    margin-top: 20px;
+    margin-bottom: 60px;
 
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 
-    @media screen and (max-width: 767px) {
-      margin-bottom: 60px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 

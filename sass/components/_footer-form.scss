@@ -1,4 +1,6 @@
 .footer-form {
+  margin-right: auto;
+  margin-left: auto;
   &__title {
     margin-bottom: 20px;
 
@@ -11,17 +13,19 @@
   }
 
   &__contain {
-    @media screen and (max-width: 767px) {
-      margin-right: auto;
-      margin-left: auto;
+    @media screen and (max-width: 1199px) {
     }
-    //   display: flex;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__input {
-    // margin-right: 12px;
-    // width: 358px;
+    width: 100%;
     height: 50px;
+
+    margin-bottom: 20px;
     padding-left: 16px;
 
     color: $color-text-light;
@@ -31,9 +35,13 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
-    @media screen and (max-width: 767px) {
-      width: 100%;
-      margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+      width: 358px;
     }
   }
 
@@ -49,7 +57,7 @@
   &__button {
     @include flexCenter($type: flex, $main-axis: center, $cross-axis: center);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       margin-right: auto;
       margin-left: auto;
     }

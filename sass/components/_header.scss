@@ -1,131 +1,27 @@
 .header {
-  // border-bottom: 1px solid $color-header-border;
+  border-bottom: 1px solid $color-header-border;
 
   &__container {
     padding-top: 16px;
     padding-bottom: 16px;
 
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    @media screen and (min-width: 768px) {
+      margin-left: 88px;
+    }
+  }
+
+  &__contacts {
+    @media screen and (min-width: 768px) {
+      margin-left: 84px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
   }
 }
-
-.logo {
-  font-family: $font-logo, sans-serif;
-  color: $color-text-black;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-
-  &:focus {
-    outline: none;
-  }
-
-  &--accent {
-    color: $color-accent;
-  }
-}
-
-// /* nav */
-
-// .nav {
-//   display: flex;
-
-//   margin-left: 93px;
-// }
-
-// .nav__item {
-//   position: relative;
-
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-
-//   & + & {
-//     margin-left: 50px;
-//   }
-// }
-
-// .nav__link {
-//   color: $color-text-title;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.1;
-//   letter-spacing: 0.02em;
-//   text-decoration: none;
-
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: $color-accent;
-
-//     outline: 0;
-//   }
-
-//   &--current::after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     left: 0;
-//     bottom: -1px;
-
-//     height: 4px;
-//     width: 100%;
-
-//     background-color: $color-accent;
-//     border-radius: 2px;
-//   }
-
-//   &--current {
-//     color: $color-accent;
-//   }
-// }
-
-// /* contacts */
-
-// .contacts {
-//   display: flex;
-
-//   margin-left: auto;
-//   &__icon {
-//     display: block;
-
-//     margin-right: 10px;
-//   }
-// }
-
-// .contacts__item {
-//   display: flex;
-//   align-items: center;
-
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   & + & {
-//     margin-left: 30px;
-//   }
-// }
-
-// .contacts__link {
-//   display: inline-flex;
-//   align-items: center;
-
-//   color: currentColor;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 16px;
-//   letter-spacing: 0.02em;
-//   text-decoration: none;
-
-//   fill: $color-text-primary;
-
-//   &:hover,
-//   &:focus {
-//     color: $color-accent;
-
-//     fill: $color-accent;
-//     outline: 0;
-//   }
-// }

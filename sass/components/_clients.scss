@@ -1,26 +1,23 @@
 .clients-list {
   display: flex;
-  margin: -15px;
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
+  gap: 30px;
 
   &__item {
-    margin: 15px;
+    height: 92px;
+    width: calc((100% - 30px) / 2);
 
     border: 1px solid $color-company;
     border-radius: 4px;
 
-    @media screen and (max-width: 767px) {
-      height: 90px;
-      width: calc((100% - 60px) / 2);
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
     }
-    // width: calc((100% - 150px) / 6);
-  }
 
-  //   &__item:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
+    }
+  }
 
   &__link {
     display: flex;

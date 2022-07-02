@@ -1,19 +1,24 @@
 .features {
-  //   padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 
-  //   &__list {
-  //     display: flex;
-  //   }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-  //   &__item {
-  //     @include amountRow(calc((100% - 90px) / 4));
-  //   }
+  &__item {
+    width: 100%;
 
-  //   &__item:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      @include amountRow(calc((100% - 30px) / 2));
+    }
+
+    @media screen and (min-width: 1200px) {
+      @include amountRow(calc((100% - 90px) / 4));
+    }
   }
 
   &__icon {

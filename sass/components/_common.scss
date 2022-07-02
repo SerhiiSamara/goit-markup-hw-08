@@ -47,27 +47,29 @@ img {
 }
 
 .section {
-  @media screen and (max-width: 1200px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-  //   padding-top: 94px;
-  //   padding-bottom: 94px;
 
   &__title {
-    margin-top: 0;
-    // margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    font-size: 28px;
 
     color: $color-text-title;
     font-weight: 700;
-    // font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-align: center;
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
 
-      font-size: 28px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+
+      font-size: 36px;
     }
   }
 }
