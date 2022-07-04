@@ -31,14 +31,13 @@
 
         z-index: 100;
         background-color: $color-background-primery;
+        &.is-open {
+          display: block;
+        }
       }
       display: flex;
       align-items: center;
       justify-content: flex-end;
-    }
-
-    .menu-container.is-open {
-      display: block;
     }
   }
 

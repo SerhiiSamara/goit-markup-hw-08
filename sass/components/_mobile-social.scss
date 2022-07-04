@@ -1,10 +1,38 @@
 .mobile-social {
-  display: flex;
-  gap: 20px;
-
+  display: none;
   color: $color-accent;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: start;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__item:not(:first-child) {
+    padding-left: 10px;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 10px;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link {
+    color: $color-accent;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
 }
