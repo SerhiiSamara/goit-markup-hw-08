@@ -170,7 +170,7 @@ img {
     top: 0;
     left: 0;
     width: 101%;
-    height: 100vh;
+    min-height: 480px;
     padding: 48px 40px;
     margin-right: -1px;
     margin-left: -1px;
@@ -345,6 +345,12 @@ img {
   color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-bottom: 64px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts {
     display: -webkit-box;
@@ -442,6 +448,18 @@ img {
   .contacts__icon {
     display: block;
   }
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .hero {
