@@ -1,0 +1,35 @@
+.menu-button {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+    z-index: 200;
+
+    &:hover,
+    &:focus {
+      fill: $color-accent;
+    }
+  }
+}
+
+.menu-button .img-cross {
+  display: none;
+}
+
+.menu-button.is-open .img-cross {
+  display: block;
+}
+
+.menu-button.is-open .img-menu {
+  display: none;
+}

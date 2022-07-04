@@ -1,12 +1,45 @@
 .header {
-  border-bottom: 1px solid $color-header-border;
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px solid $color-header-border;
+  }
 
   &__container {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    position: relative;
 
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .menu-container {
+      @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 101%;
+        height: 100vh;
+
+        padding: 48px 40px;
+        margin-right: -1px;
+        margin-left: -1px;
+
+        z-index: 100;
+        background-color: $color-background-primery;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .menu-container.is-open {
+      display: block;
+    }
   }
 
   &__nav {
@@ -21,7 +54,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      margin-left: auto;
+      margin-left: 305px;
     }
   }
 }
