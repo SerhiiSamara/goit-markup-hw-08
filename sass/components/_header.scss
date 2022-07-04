@@ -33,6 +33,7 @@
         background-color: $color-background-primery;
         &.is-open {
           display: block;
+          overflow-y: scroll;
         }
       }
       display: flex;

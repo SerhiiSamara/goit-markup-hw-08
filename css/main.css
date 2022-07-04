@@ -183,6 +183,7 @@ a {
   }
   .header__container .menu-container.is-open {
     display: block;
+    overflow-y: scroll;
   }
 }
 
