@@ -1,0 +1,24 @@
+.menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    min-height: 480px;
+
+    padding: 48px 40px;
+    margin-right: -1px;
+    margin-left: -1px;
+
+    z-index: 100;
+    background-color: $color-background-primery;
+    &.is-open {
+      display: block;
+      overflow-y: scroll;
+    }
+  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
