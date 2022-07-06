@@ -1,6 +1,7 @@
 .footer-form {
   margin-right: auto;
   margin-left: auto;
+
   &__title {
     margin-bottom: 20px;
 
@@ -13,9 +14,6 @@
   }
 
   &__contain {
-    @media screen and (max-width: 1199px) {
-    }
-
     @media screen and (min-width: 1200px) {
       display: flex;
     }

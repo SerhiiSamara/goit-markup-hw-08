@@ -2,12 +2,9 @@
   display: flex;
   align-items: center;
 
+  font-size: 12px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-
-  @media screen and (max-width: 1199px) {
-    font-size: 12px;
-    line-height: 1.2;
-  }
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;

@@ -79,21 +79,20 @@
   }
 
   &__title {
+    max-width: 360px;
+
     margin-top: 0;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
 
-    font-weight: 900;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
     color: $color-text-light;
-    max-width: 360px;
-
+    font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
 
     @media screen and (min-width: 1200px) {
       max-width: 696px;

@@ -1,7 +1,5 @@
 .nav {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
-  }
+  margin-bottom: 302px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -14,17 +12,18 @@
     margin-left: 93px;
   }
 
-  &__item {
-    position: relative;
-    @media screen and (min-width: 768px) {
-      padding-top: 32px;
-      padding-bottom: 32px;
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
     }
   }
 
-  @media screen and (max-width: 767px) {
-    &__item:not(:last-child) {
-      margin-bottom: 32px;
+  &__item {
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
 

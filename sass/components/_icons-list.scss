@@ -1,4 +1,5 @@
 .icons-list {
+	
   @include flexCenter($type: flex, $main-axis: center, $cross-axis: center);
 
   &__link {
@@ -23,12 +24,4 @@
   &__img {
     display: block;
   }
-
-  // @media screen and (min-width: 1200px) {
-  //   padding-bottom: 30px;
-
-  //   &__item:not(:last-child) {
-  //     margin-right: 10px;
-  //   }
-  // }
 }
