@@ -1,6 +1,8 @@
 .hero {
   position: relative;
 
+  max-width: 1600px;
+
   margin-right: auto;
   margin-left: auto;
 
@@ -28,13 +30,7 @@
       url(../images/mobile-hero-bg@x2.jpg);
   }
 
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-  }
-
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
