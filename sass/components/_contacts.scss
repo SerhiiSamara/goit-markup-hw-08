@@ -1,18 +1,18 @@
 .contacts {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 64px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   margin-bottom: 64px;
+  // }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
 
-    gap: 10px;
-  }
+  //   gap: 10px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    gap: 30px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   gap: 30px;
+  // }
 
   &__item {
     display: flex;

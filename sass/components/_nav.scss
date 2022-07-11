@@ -1,30 +1,21 @@
 .nav {
-  margin-bottom: 302px;
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   justify-content: center;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
+  //   gap: 50px;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+  // }
 
-    gap: 50px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-  }
-
-  &__item:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 32px;
-    }
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 93px;
+  // }
 
   &__item {
-    position: relative;
-
-    @media screen and (min-width: 768px) {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
+    display: block;
+    width: 100%;
+    padding-bottom: 32px;
   }
 
   &__link {
@@ -49,7 +40,6 @@
       line-height: 1.1;
       &--current::after {
         content: "";
-        display: block;
         position: absolute;
         left: 0;
         bottom: -1px;

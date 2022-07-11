@@ -1,35 +1,35 @@
-.menu-button {
-  display: none;
-  @media screen and (max-width: 767px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.mobile-menu__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    border: none;
-    background-color: transparent;
-    z-index: 200;
+  border: none;
+  background-color: transparent;
 
-    &:hover,
-    &:focus {
-      fill: $color-accent;
-    }
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
-.menu-button .img-cross {
-  display: none;
-}
+// .menu-button .img-cross {
+//   display: none;
+// }
 
-.menu-button.is-open .img-cross {
-  display: block;
-}
+// .menu-button.is-open .img-cross {
+//   display: block;
+// }
 
-.menu-button.is-open .img-menu {
-  display: none;
-}
+// .menu-button.is-open .img-menu {
+//   display: none;
+// }
