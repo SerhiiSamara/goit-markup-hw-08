@@ -1,24 +1,9 @@
 .nav {
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   justify-content: center;
 
-  //   gap: 50px;
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   margin-left: 93px;
-  // }
-
-  &__item {
-    display: block;
-    width: 100%;
-    padding-bottom: 32px;
   }
 
   &__link {
+    display: block;
     color: $color-text-title;
     font-weight: 500;
     font-size: 40px;
@@ -34,10 +19,9 @@
 
       outline: 0;
     }
-
     @media screen and (min-width: 768px) {
       font-size: 14px;
-      line-height: 1.1;
+      line-height: 1.14;
       &--current::after {
         content: "";
         position: absolute;

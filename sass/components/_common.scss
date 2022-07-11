@@ -130,3 +130,8 @@ a {
   pointer-events: none;
   visibility: hidden;
 }
+
+.is-scroll {
+  max-height: 90%;
+  overflow: scroll;
+}

@@ -1,51 +1,8 @@
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
 
-  width: 100%;
-  height: 100%;
-
-  background-color: $color-background-primery;
-  z-index: 301;
-
-  &__container {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    max-width: 480px;
-    height: 100%;
 
-    padding: 48px 40px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 40px;
-    height: 40px;
-
-    margin: 0;
-    padding: 0;
-
-    border: none;
-    background-color: transparent;
-
-    &:hover,
-    &:focus {
-      fill: $color-accent;
-    }
-
-    &--close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
   }
 }

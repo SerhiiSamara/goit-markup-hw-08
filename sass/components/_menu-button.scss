@@ -1,7 +1,4 @@
-.mobile-menu__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 
   width: 40px;
   height: 40px;
@@ -16,20 +13,3 @@
   &:focus {
     fill: $color-accent;
   }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-// .menu-button .img-cross {
-//   display: none;
-// }
-
-// .menu-button.is-open .img-cross {
-//   display: block;
-// }
-
-// .menu-button.is-open .img-menu {
-//   display: none;
-// }

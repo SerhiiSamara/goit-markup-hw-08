@@ -3,16 +3,7 @@
   //   margin-bottom: 64px;
   // }
 
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
 
-  //   gap: 10px;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   gap: 30px;
-  // }
 
   &__item {
     display: flex;
@@ -49,6 +40,13 @@
       &:hover,
       &:focus {
         font-size: 34px;
+      }
+    }
+
+    @media screen and (max-width: 376px) {
+      &:hover,
+      &:focus {
+        font-size: 26px;
       }
     }
 
