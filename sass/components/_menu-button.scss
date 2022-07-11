@@ -1,4 +1,5 @@
-
+.menu__button {
+  display: none;
 
   width: 40px;
   height: 40px;
@@ -13,3 +14,18 @@
   &:focus {
     fill: $color-accent;
   }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--close {
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+}
