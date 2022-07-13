@@ -10,7 +10,6 @@
   &__cell {
     margin: 15px;
 
-    border: 1px solid $color-example-card-border;
     z-index: 2;
 
     @media screen and (min-width: 768px) {
@@ -23,8 +22,8 @@
   }
 
   &__item {
-    position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
 
     height: 100%;
     width: 100%;
@@ -81,7 +80,12 @@
   }
 
   &__contain {
+    flex-grow: 2;
     padding: 20px 24px;
+
+    border-left: 1px solid $color-example-card-border;
+    border-right: 1px solid $color-example-card-border;
+    border-bottom: 1px solid $color-example-card-border;
   }
 
   &__title {

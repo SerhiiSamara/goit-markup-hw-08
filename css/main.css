@@ -1461,7 +1461,6 @@ a {
 
 .example__cell {
   margin: 15px;
-  border: 1px solid #eeeeee;
   z-index: 2;
 }
 
@@ -1478,8 +1477,13 @@ a {
 }
 
 .example__item {
-  position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   width: 100%;
   text-decoration: none;
@@ -1541,7 +1545,13 @@ a {
 }
 
 .example__contain {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .example__title {
