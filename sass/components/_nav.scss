@@ -2,6 +2,13 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media screen and (max-width: 767px) {
+    &__item {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: nowrap;
@@ -13,19 +20,16 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    &__item {
+      position: relative;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
-  &__item {
-    position: relative;
-    width: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    @media screen and (max-width: 767px) {
-      margin-bottom: 32px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 
   &__link {

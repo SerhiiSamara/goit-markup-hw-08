@@ -1,7 +1,5 @@
 .header {
-  @media screen and (min-width: 768px) {
-    border-bottom: 1px solid $color-header-border;
-  }
+  border-bottom: 1px solid $color-header-border;
 
   &__container {
     position: relative;

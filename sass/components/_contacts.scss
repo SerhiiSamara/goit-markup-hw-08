@@ -17,9 +17,6 @@
   &__item {
     display: flex;
     align-items: center;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__item:not(:last-child) {
@@ -44,6 +41,9 @@
     text-decoration: none;
 
     fill: $color-text-primary;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (max-width: 767px) {
       &:hover,
