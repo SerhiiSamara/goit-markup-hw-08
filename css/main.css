@@ -1460,8 +1460,9 @@ a {
 }
 
 .example__cell {
-  max-width: 100%;
   margin: 15px;
+  border: 1px solid #eeeeee;
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -1502,6 +1503,7 @@ a {
 .example__img {
   display: block;
   width: 100%;
+  z-index: 3;
 }
 
 .example__overlay {
@@ -1539,13 +1541,7 @@ a {
 }
 
 .example__contain {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 
 .example__title {
