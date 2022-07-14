@@ -1,5 +1,6 @@
 .icons-list {
-	
+  gap: 10px;
+
   @include flexCenter($type: flex, $main-axis: center, $cross-axis: center);
 
   &__link {
