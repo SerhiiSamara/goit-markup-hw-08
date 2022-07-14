@@ -506,7 +506,7 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 24px;
+    gap: 20px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -525,7 +525,7 @@ a {
   position: absolute;
   height: 100%;
   top: 0;
-  left: -12px;
+  left: -10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
